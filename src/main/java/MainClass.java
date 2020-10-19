@@ -46,7 +46,7 @@ public class MainClass {
         List<String[]> learningArray = new ArrayList<String[]>();
         List<String[]> testArray;
 
-        int learningArraySize = (int)(0.75*arrayData.size()-1);
+        int learningArraySize = (int)(0.75*(arrayData.size()-1));
 
         for (int i=0; i<learningArraySize; i++) {
             int d = rn.nextInt(arrayData2.size()-1);
