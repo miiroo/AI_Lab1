@@ -56,11 +56,12 @@ public class MainClass {
             }
         }
 
+        //Test array got other items
         testArray = arrayData2;
         testArray.remove(0);
         arrayData2.clear();
 
-        
+
         //Show arrays if needed
         System.out.println("Do you want to see Learning and Test arrays? (y/n)");
         BufferedReader rder = new BufferedReader(new InputStreamReader((System.in)));
