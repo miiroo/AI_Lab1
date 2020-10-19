@@ -16,7 +16,7 @@ public class MainClass {
 
         //CSV file reading
         CSVReader reader = new CSVReader(new FileReader("C:/Users/mirOo/IdeaProjects/AIlab1/src/main/resources/data.csv"), ',' , '"' , 0);
-        //read all dates into on array
+        //read all dates into one array
         List<String[]> arrayData = reader.readAll();
 
         String[] row = arrayData.get(0);
@@ -44,7 +44,7 @@ public class MainClass {
         Random rn = new Random();
         List<String[]> arrayData2 = arrayData;
         List<String[]> learningArray = new ArrayList<String[]>();
-        List<String[]> testArray = new ArrayList<String[]>();
+        List<String[]> testArray;
 
         int learningArraySize = (int)(0.75*arrayData.size()-1);
 
