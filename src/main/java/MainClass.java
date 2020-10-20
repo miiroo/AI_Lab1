@@ -44,7 +44,7 @@ public class MainClass {
         Random rn = new Random();
         List<String[]> arrayData2 = arrayData;
         List<String[]> learningArray = new ArrayList<String[]>();
-        List<String[]> testArray;
+        List<String[]> testArray = new ArrayList<String[]>();
 
         int learningArraySize = (int)(0.75*(arrayData.size()-1));
 
@@ -57,10 +57,12 @@ public class MainClass {
         }
 
         //Test array got other items
-        testArray = arrayData2;
+        testArray.addAll(arrayData2);
         testArray.remove(0);
         arrayData2.clear();
 
+        System.out.println("Learning array count: " + (learningArray.size()));
+        System.out.println("Test array count: " + (testArray.size()));
 
         //Show arrays if needed
         System.out.println("Do you want to see Learning and Test arrays? (y/n)");
