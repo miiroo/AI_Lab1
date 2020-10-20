@@ -2,6 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataClean {
+
+    private List<String> wordAttr = new ArrayList();
+
+
     public  List<String[]> cleanData( List<String[]> arrayData) {
         //get attribute count
         String[] row = arrayData.get(0);
@@ -19,7 +23,7 @@ public class DataClean {
 
 
     public  List<String[]> fromCatToBinary( List<String[]> arrayData) {
-        List<String> wordAttr = new ArrayList();
+
         String[] row = arrayData.get(1);
         int wordAttrPosition = 0;
 
