@@ -56,7 +56,7 @@ public class MainClass {
             }
         }
 
-        //Test array got other items
+        //Test array contains all the remaining data
         testArray.addAll(arrayData2);
         testArray.remove(0);
         arrayData2.clear();
