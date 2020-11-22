@@ -1,0 +1,598 @@
+                                                                       /------- Alive (0)
+
+                                                             /------- diabetes < 1
+
+                                                             |         |         /------- Alive (0)
+
+                                                             |         \------- smoking < 1
+
+                                                             |                   |                   /------- Alive (0)
+
+                                                             |                   |         /------- anaemia < 1
+
+                                                             |                   |         |         \------- Dead (1)
+
+                                                             |                   \------- high_blood_pressure < 1
+
+                                                             |                             \------- Dead (1)
+
+                                                   /------- creatinine_phosphokinase < 55
+
+                                                   |         \------- Alive (0)
+
+                                         /------- serum_creatinine < 1,5
+
+                                         |         |                   /------- Alive (0)
+
+                                         |         |         /------- anaemia < 1
+
+                                         |         |         |         |         /------- Alive (0)
+
+                                         |         |         |         \------- diabetes < 1
+
+                                         |         |         |                   |         /------- Alive (0)
+
+                                         |         |         |                   \------- high_blood_pressure < 1
+
+                                         |         |         |                             |                   /------- Dead (1)
+
+                                         |         |         |                             |         /------- smoking < 1
+
+                                         |         |         |                             |         |         \------- Dead (1)
+
+                                         |         |         |                             \------- sex < 1
+
+                                         |         |         |                                       \------- Alive (0)
+
+                                         |         \------- creatinine_phosphokinase < 791,25
+
+                                         |                   |                   /------- Alive (0)
+
+                                         |                   |         /------- diabetes < 1
+
+                                         |                   |         |         |         /------- Alive (0)
+
+                                         |                   |         |         \------- anaemia < 1
+
+                                         |                   |         |                   |         /------- Alive (0)
+
+                                         |                   |         |                   \------- high_blood_pressure < 1
+
+                                         |                   |         |                             |         /------- Dead (1)
+
+                                         |                   |         |                             \------- smoking < 1
+
+                                         |                   |         |                                       \------- Alive (0)
+
+                                         |                   \------- sex < 1
+
+                                         |                             \------- Alive (0)
+
+                               /------- age < 70,4
+
+                               |         |                             /------- Alive (0)
+
+                               |         |                   /------- smoking < 1
+
+                               |         |                   |         |                   /------- Alive (0)
+
+                               |         |                   |         |         /------- diabetes < 1
+
+                               |         |                   |         |         |         \------- Dead (1)
+
+                               |         |                   |         \------- anaemia < 1
+
+                               |         |                   |                   \------- Dead (1)
+
+                               |         |         /------- serum_creatinine < 2,2
+
+                               |         |         |         |                   /------- Alive (0)
+
+                               |         |         |         |         /------- high_blood_pressure < 1
+
+                               |         |         |         |         |         |         /------- Alive (0)
+
+                               |         |         |         |         |         \------- anaemia < 1
+
+                               |         |         |         |         |                   |                   /------- Alive (0)
+
+                               |         |         |         |         |                   |         /------- smoking < 1
+
+                               |         |         |         |         |                   |         |         \------- Alive (0)
+
+                               |         |         |         |         |                   \------- diabetes < 1
+
+                               |         |         |         |         |                             \------- Alive (0)
+
+                               |         |         |         \------- sex < 1
+
+                               |         |         |                   |         /------- Dead (1)
+
+                               |         |         |                   \------- smoking < 1
+
+                               |         |         |                             |         /------- Alive (0)
+
+                               |         |         |                             \------- anaemia < 1
+
+                               |         |         |                                       |         /------- Alive (0)
+
+                               |         |         |                                       \------- high_blood_pressure < 1
+
+                               |         |         |                                                 |         /------- Alive (0)
+
+                               |         |         |                                                 \------- diabetes < 1
+
+                               |         |         |                                                           \------- Alive (0)
+
+                               |         \------- creatinine_phosphokinase < 423,83
+
+                               |                   |                   /------- Alive (0)
+
+                               |                   |         /------- smoking < 1
+
+                               |                   |         |         |                             /------- Dead (1)
+
+                               |                   |         |         |                   /------- high_blood_pressure < 1
+
+                               |                   |         |         |                   |         \------- Alive (0)
+
+                               |                   |         |         |         /------- diabetes < 1
+
+                               |                   |         |         |         |         \------- Alive (0)
+
+                               |                   |         |         \------- anaemia < 1
+
+                               |                   |         |                   \------- Alive (0)
+
+                               |                   \------- serum_creatinine < 1,57
+
+                               |                             |         /------- Alive (0)
+
+                               |                             \------- high_blood_pressure < 1
+
+                               |                                       |         /------- Alive (0)
+
+                               |                                       \------- diabetes < 1
+
+                               |                                                 |         /------- Alive (0)
+
+                               |                                                 \------- smoking < 1
+
+                               |                                                           |         /------- Alive (0)
+
+                               |                                                           \------- sex < 1
+
+                               |                                                                     |         /------- Alive (0)
+
+                               |                                                                     \------- anaemia < 1
+
+                               |                                                                               \------- Alive (0)
+
+                     /------- ejection_fraction < 28,78
+
+                     |         |                                       /------- Alive (0)
+
+                     |         |                             /------- anaemia < 1
+
+                     |         |                             |         \------- Dead (1)
+
+                     |         |                   /------- serum_creatinine < 1,98
+
+                     |         |                   |         |                   /------- Dead (1)
+
+                     |         |                   |         |         /------- high_blood_pressure < 1
+
+                     |         |                   |         |         |         |         /------- Dead (1)
+
+                     |         |                   |         |         |         \------- diabetes < 1
+
+                     |         |                   |         |         |                   |         /------- Alive (0)
+
+                     |         |                   |         |         |                   \------- anaemia < 1
+
+                     |         |                   |         |         |                             \------- Dead (1)
+
+                     |         |                   |         \------- sex < 1
+
+                     |         |                   |                   \------- Dead (1)
+
+                     |         |         /------- creatinine_phosphokinase < 231,9
+
+                     |         |         |         |                   /------- Alive (0)
+
+                     |         |         |         |         /------- high_blood_pressure < 1
+
+                     |         |         |         |         |         |         /------- Dead (1)
+
+                     |         |         |         |         |         \------- smoking < 1
+
+                     |         |         |         |         |                   |         /------- Dead (1)
+
+                     |         |         |         |         |                   \------- anaemia < 1
+
+                     |         |         |         |         |                             \------- Alive (0)
+
+                     |         |         |         \------- serum_creatinine < 2,26
+
+                     |         |         |                   |                             /------- Alive (0)
+
+                     |         |         |                   |                   /------- high_blood_pressure < 1
+
+                     |         |         |                   |                   |         |                   /------- Dead (1)
+
+                     |         |         |                   |                   |         |         /------- smoking < 1
+
+                     |         |         |                   |                   |         |         |         \------- Alive (0)
+
+                     |         |         |                   |                   |         \------- sex < 1
+
+                     |         |         |                   |                   |                   \------- Alive (0)
+
+                     |         |         |                   |         /------- anaemia < 1
+
+                     |         |         |                   |         |         \------- Alive (0)
+
+                     |         |         |                   \------- diabetes < 1
+
+                     |         |         |                             |         /------- Alive (0)
+
+                     |         |         |                             \------- high_blood_pressure < 1
+
+                     |         |         |                                       |         /------- Dead (1)
+
+                     |         |         |                                       \------- anaemia < 1
+
+                     |         |         |                                                 \------- Alive (0)
+
+                     |         \------- age < 59
+
+                     |                   |                             /------- Dead (1)
+
+                     |                   |                   /------- high_blood_pressure < 1
+
+                     |                   |                   |         |                             /------- Alive (0)
+
+                     |                   |                   |         |                   /------- diabetes < 1
+
+                     |                   |                   |         |                   |         |         /------- Dead (1)
+
+                     |                   |                   |         |                   |         \------- smoking < 1
+
+                     |                   |                   |         |                   |                   \------- Alive (0)
+
+                     |                   |                   |         |         /------- anaemia < 1
+
+                     |                   |                   |         |         |         \------- Alive (0)
+
+                     |                   |                   |         \------- sex < 1
+
+                     |                   |                   |                   \------- Dead (1)
+
+                     |                   |         /------- creatinine_phosphokinase < 57
+
+                     |                   |         |         \------- Dead (1)
+
+                     |                   \------- serum_creatinine < 1,2
+
+                     |                             |                             /------- Alive (0)
+
+                     |                             |                   /------- diabetes < 1
+
+                     |                             |                   |         |         /------- Alive (0)
+
+                     |                             |                   |         \------- anaemia < 1
+
+                     |                             |                   |                   |         /------- Alive (0)
+
+                     |                             |                   |                   \------- high_blood_pressure < 1
+
+                     |                             |                   |                             |         /------- Alive (0)
+
+                     |                             |                   |                             \------- smoking < 1
+
+                     |                             |                   |                                       \------- Dead (1)
+
+                     |                             |         /------- sex < 1
+
+                     |                             |         |         \------- Alive (0)
+
+                     |                             \------- creatinine_phosphokinase < 66
+
+                     |                                       \------- Dead (1)
+
+           /------- time < 67,03
+
+           |         |                             /------- Dead (1)
+
+           |         |                   /------- creatinine_phosphokinase < 232,62
+
+           |         |                   |         |         /------- Dead (1)
+
+           |         |                   |         \------- serum_creatinine < 4,54
+
+           |         |                   |                   |                   /------- Dead (1)
+
+           |         |                   |                   |         /------- anaemia < 1
+
+           |         |                   |                   |         |         |                             /------- Dead (1)
+
+           |         |                   |                   |         |         |                   /------- smoking < 1
+
+           |         |                   |                   |         |         |                   |         \------- Dead (1)
+
+           |         |                   |                   |         |         |         /------- high_blood_pressure < 1
+
+           |         |                   |                   |         |         |         |         \------- Dead (1)
+
+           |         |                   |                   |         |         \------- diabetes < 1
+
+           |         |                   |                   |         |                   \------- Dead (1)
+
+           |         |                   |                   \------- sex < 1
+
+           |         |                   |                             \------- Dead (1)
+
+           |         |         /------- age < 60,76
+
+           |         |         |         |                             /------- Dead (1)
+
+           |         |         |         |                   /------- high_blood_pressure < 1
+
+           |         |         |         |                   |         |                   /------- Dead (1)
+
+           |         |         |         |                   |         |         /------- anaemia < 1
+
+           |         |         |         |                   |         |         |         |         /------- Dead (1)
+
+           |         |         |         |                   |         |         |         \------- smoking < 1
+
+           |         |         |         |                   |         |         |                   |         /------- Alive (0)
+
+           |         |         |         |                   |         |         |                   \------- sex < 1
+
+           |         |         |         |                   |         |         |                             \------- Dead (1)
+
+           |         |         |         |                   |         \------- diabetes < 1
+
+           |         |         |         |                   |                   \------- Dead (1)
+
+           |         |         |         |         /------- creatinine_phosphokinase < 60
+
+           |         |         |         |         |         \------- Alive (0)
+
+           |         |         |         \------- serum_creatinine < 1,29
+
+           |         |         |                   |         /------- Dead (1)
+
+           |         |         |                   \------- creatinine_phosphokinase < 1480,82
+
+           |         |         |                             |                             /------- Alive (0)
+
+           |         |         |                             |                   /------- diabetes < 1
+
+           |         |         |                             |                   |         |         /------- Dead (1)
+
+           |         |         |                             |                   |         \------- sex < 1
+
+           |         |         |                             |                   |                   \------- Alive (0)
+
+           |         |         |                             |         /------- anaemia < 1
+
+           |         |         |                             |         |         \------- Dead (1)
+
+           |         |         |                             \------- high_blood_pressure < 1
+
+           |         |         |                                       |                             /------- Dead (1)
+
+           |         |         |                                       |                   /------- sex < 1
+
+           |         |         |                                       |                   |         \------- Alive (0)
+
+           |         |         |                                       |         /------- diabetes < 1
+
+           |         |         |                                       |         |         \------- Alive (0)
+
+           |         |         |                                       \------- anaemia < 1
+
+           |         |         |                                                 |                   /------- Alive (0)
+
+           |         |         |                                                 |         /------- diabetes < 1
+
+           |         |         |                                                 |         |         |         /------- Alive (0)
+
+           |         |         |                                                 |         |         \------- smoking < 1
+
+           |         |         |                                                 |         |                   \------- Dead (1)
+
+           |         |         |                                                 \------- sex < 1
+
+           |         |         |                                                           \------- Dead (1)
+
+           |         \------- ejection_fraction < 25,87
+
+           |                   |                                       /------- Dead (1)
+
+           |                   |                             /------- diabetes < 1
+
+           |                   |                             |         |                             /------- Alive (0)
+
+           |                   |                             |         |                   /------- smoking < 1
+
+           |                   |                             |         |                   |         |         /------- Dead (1)
+
+           |                   |                             |         |                   |         \------- sex < 1
+
+           |                   |                             |         |                   |                   \------- Dead (1)
+
+           |                   |                             |         |         /------- high_blood_pressure < 1
+
+           |                   |                             |         |         |         \------- Dead (1)
+
+           |                   |                             |         \------- anaemia < 1
+
+           |                   |                             |                   \------- Dead (1)
+
+           |                   |                   /------- serum_creatinine < 1
+
+           |                   |                   |         \------- Alive (0)
+
+           |                   |         /------- creatinine_phosphokinase < 52
+
+           |                   |         |         \------- Alive (0)
+
+           |                   \------- age < 52
+
+           |                             \------- Dead (1)
+
+ /------- platelets < 142669,45
+
+ |         |                                       /------- Alive (0)
+
+ |         |                             /------- anaemia < 1
+
+ |         |                             |         |                   /------- Dead (1)
+
+ |         |                             |         |         /------- diabetes < 1
+
+ |         |                             |         |         |         \------- Alive (0)
+
+ |         |                             |         \------- creatinine_phosphokinase < 66
+
+ |         |                             |                   \------- Alive (0)
+
+ |         |                   /------- serum_creatinine < 1,8
+
+ |         |                   |         |                             /------- Alive (0)
+
+ |         |                   |         |                   /------- smoking < 1
+
+ |         |                   |         |                   |         |         /------- Alive (0)
+
+ |         |                   |         |                   |         \------- diabetes < 1
+
+ |         |                   |         |                   |                   |         /------- Alive (0)
+
+ |         |                   |         |                   |                   \------- anaemia < 1
+
+ |         |                   |         |                   |                             \------- Dead (1)
+
+ |         |                   |         |         /------- ejection_fraction < 30
+
+ |         |                   |         |         |         \------- Dead (1)
+
+ |         |                   |         \------- creatinine_phosphokinase < 135
+
+ |         |                   |                   \------- Dead (1)
+
+ |         |         /------- time < 83,85
+
+ |         |         |         |                                                 /------- Dead (1)
+
+ |         |         |         |                                       /------- high_blood_pressure < 1
+
+ |         |         |         |                                       |         |         /------- Dead (1)
+
+ |         |         |         |                                       |         \------- anaemia < 1
+
+ |         |         |         |                                       |                   |         /------- Alive (0)
+
+ |         |         |         |                                       |                   \------- diabetes < 1
+
+ |         |         |         |                                       |                             \------- Dead (1)
+
+ |         |         |         |                             /------- sex < 1
+
+ |         |         |         |                             |         \------- Alive (0)
+
+ |         |         |         |                   /------- serum_creatinine < 0,9
+
+ |         |         |         |                   |         \------- Alive (0)
+
+ |         |         |         |         /------- ejection_fraction < 15
+
+ |         |         |         |         |         \------- Alive (0)
+
+ |         |         |         \------- creatinine_phosphokinase < 68
+
+ |         |         |                   \------- Alive (0)
+
+ |         \------- age < 53,71
+
+ |                   |                                       /------- Alive (0)
+
+ |                   |                             /------- smoking < 1
+
+ |                   |                             |         |                   /------- Dead (1)
+
+ |                   |                             |         |         /------- diabetes < 1
+
+ |                   |                             |         |         |         |                   /------- Dead (1)
+
+ |                   |                             |         |         |         |         /------- anaemia < 1
+
+ |                   |                             |         |         |         |         |         |         /------- Dead (1)
+
+ |                   |                             |         |         |         |         |         \------- high_blood_pressure < 1
+
+ |                   |                             |         |         |         |         |                   \------- Alive (0)
+
+ |                   |                             |         |         |         \------- sex < 1
+
+ |                   |                             |         |         |                   \------- Alive (0)
+
+ |                   |                             |         \------- time < 11
+
+ |                   |                             |                   \------- Alive (0)
+
+ |                   |                   /------- serum_creatinine < 0,8
+
+ |                   |                   |         \------- Alive (0)
+
+ |                   |         /------- ejection_fraction < 20
+
+ |                   |         |         \------- Alive (0)
+
+ |                   \------- creatinine_phosphokinase < 582
+
+ |                             \------- Alive (0)
+
+serum_sodium < 125,04
+
+ |         /------- Dead (1)
+
+ \------- serum_creatinine < 1,92
+
+           |                                                 /------- Dead (1)
+
+           |                                       /------- high_blood_pressure < 1
+
+           |                                       |         |                             /------- Dead (1)
+
+           |                                       |         |                   /------- anaemia < 1
+
+           |                                       |         |                   |         \------- Alive (0)
+
+           |                                       |         |         /------- time < 15
+
+           |                                       |         |         |         \------- Dead (1)
+
+           |                                       |         \------- platelets < 87000
+
+           |                                       |                   \------- Dead (1)
+
+           |                             /------- ejection_fraction < 35
+
+           |                             |         \------- Dead (1)
+
+           |                   /------- diabetes < 1
+
+           |                   |         \------- Dead (1)
+
+           |         /------- creatinine_phosphokinase < 582
+
+           |         |         \------- Dead (1)
+
+           \------- age < 48
+
+                     \------- Dead (1)
+

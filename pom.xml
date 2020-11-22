@@ -15,5 +15,21 @@
             <version>2.3</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.jgrapht</groupId>
+            <artifactId>jgrapht-core</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jgraph</groupId>
+            <artifactId>jgraph</artifactId>
+            <version>5.5.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mxgraph</groupId>
+            <artifactId>jgraphx</artifactId>
+        </dependency>
     </dependencies>
 </project>

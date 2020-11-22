@@ -42,10 +42,11 @@ public class MainClass {
 
         //Divide to 2 arrays [learning 0.75/ test 0.25]
         Random rn = new Random();
-        List<String[]> arrayData2 = arrayData;
+        List<String[]> arrayData2 = new ArrayList<String[]>(arrayData);
         List<String[]> learningArray = new ArrayList<String[]>();
         List<String[]> testArray = new ArrayList<String[]>();
 
+        //Change amount of learning array
         int learningArraySize = (int)(0.75*(arrayData.size()-1));
 
         for (int i=0; i<learningArraySize; i++) {
@@ -81,5 +82,31 @@ public class MainClass {
             System.out.println();
         }
 
+
+
+        System.out.println("Decision tree: ");
+       // System.out.println(arrayData.size());
+        int[] atr = new int[13];
+
+        for (int i=0; i<12; i++) {
+            atr[i] = 0;
+        }
+        atr[12] = 2;
+        row = arrayData.get(0);
+        ID3 id3 = new ID3(learningArray, atr, row);
+        System.out.println("Test array: ");
+        id3.testTree(testArray);
+        System.out.println();
+        System.out.println("Learning array: ");
+        id3.testTree(learningArray);
+        System.out.println();
+        System.out.println("Depth: " + id3.getDepth(id3.decisionTree.root, 1, 1));
+        System.out.println();
+        System.out.println("Do you want to see Decision Tree? (y/n)");
+        rder = new BufferedReader(new InputStreamReader((System.in)));
+        if (rder.readLine().equals("y")) {
+            System.out.println();
+            id3.printTree();
+        }
     }
 }
