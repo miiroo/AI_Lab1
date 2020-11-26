@@ -48,6 +48,9 @@ public class ID3 {
 
     private static int classID = 12;
     public Tree decisionTree;
+    public int leafCounter = 0;
+
+
     // 0 - not used 1 - used 2 - class attr
     private String[] atributes1;
 
@@ -59,6 +62,7 @@ public class ID3 {
             curLevel = getDepth(ns.leftChild, answer, curLevel);
         }
         else {
+           // leafCounter++;
             answer++;
         }
             answer--;
@@ -67,6 +71,7 @@ public class ID3 {
             curLevel = getDepth(ns.rightChild, answer, curLevel);
         }
         else {
+          //  leafCounter++;
             answer++;
         }
             answer--;
@@ -79,10 +84,13 @@ public class ID3 {
     }
 
     public  ID3 (List<String[]> trainingData, int[] attrList, String[] attributes ) {
+        leafCounter = 0;
         decisionTree = new Tree();
         Node root = generateTree(trainingData, attrList, attributes );
         decisionTree.root = root;
         atributes1 = attributes;
+
+        //leafCounter++;
     }
 
     public void testTree(List<String[]> datas) {
@@ -221,6 +229,7 @@ public class ID3 {
 
             if (counter == datas.size()) {// || (counter >= (0.85 * datas.size()))) {
             //    out.println("Make leaf");
+                leafCounter++;
                 currNode.isLeaf = true;
                 currNode.isNode = false;
                 currNode.attrOrClass = "Dead (1)";
@@ -228,6 +237,7 @@ public class ID3 {
             }
             if (counter == 0) {//|| (counter < (0.15 * datas.size()))) {
             //    out.println("Make leaf");
+                leafCounter++;
                 currNode.isLeaf = true;
                 currNode.isNode = false;
                 currNode.attrOrClass = "Alive (0)";
@@ -349,6 +359,7 @@ public class ID3 {
 
                         if ((counter == rightSide.size()) || (counter >= (0.5 * rightSide.size()))) {
                      //       out.println("Make leaf");
+                            leafCounter++;
                             currNode.leftChild = new Node();
                             currNode.leftChild.isLeaf = true;
                             currNode.leftChild.isNode = false;
@@ -357,6 +368,7 @@ public class ID3 {
                         }
                         if ((counter == 0) || (counter < (0.5 * rightSide.size()))) {
                          //   out.println("Make leaf");
+                            leafCounter++;
                             currNode.leftChild = new Node();
                             currNode.leftChild.isLeaf = true;
                             currNode.leftChild.isNode = false;
@@ -380,6 +392,7 @@ public class ID3 {
 
                         if ((counter == leftSide.size()) || (counter >= (0.5 * leftSide.size()))) {
                           //  out.println("Make leaf");
+                            leafCounter++;
                             currNode.rightChild = new Node();
                             currNode.rightChild.isLeaf = true;
                             currNode.rightChild.isNode = false;
@@ -388,6 +401,7 @@ public class ID3 {
                         }
                         if ((counter == 0) || (counter < (0.5 * leftSide.size()))) {
                        //     out.println("Make leaf");
+                            leafCounter++;
                             currNode.rightChild = new Node();
                             currNode.rightChild.isLeaf = true;
                             currNode.rightChild.isNode = false;
@@ -408,6 +422,7 @@ public class ID3 {
 
             if ((counter == datas.size()) || (counter >= (0.5 * datas.size()))) {
              //   out.println("Make leaf");
+                leafCounter++;
                 currNode.isLeaf = true;
                 currNode.isNode = false;
                 currNode.attrOrClass = "Dead (1)";
@@ -415,6 +430,7 @@ public class ID3 {
             }
             if ((counter == 0) || counter < (0.5 * datas.size())) {
              //   out.println("Make leaf");
+                leafCounter++;
                 currNode.isLeaf = true;
                 currNode.isNode = false;
                 currNode.attrOrClass = "Alive (0)";

@@ -102,6 +102,8 @@ public class MainClass {
         System.out.println();
         System.out.println("Depth: " + id3.getDepth(id3.decisionTree.root, 1, 1));
         System.out.println();
+        System.out.println("Leafs count: "+id3.leafCounter);
+        System.out.println();
         System.out.println("Do you want to see Decision Tree? (y/n)");
         rder = new BufferedReader(new InputStreamReader((System.in)));
         if (rder.readLine().equals("y")) {
@@ -109,4 +111,5 @@ public class MainClass {
             id3.printTree();
         }
     }
+
 }

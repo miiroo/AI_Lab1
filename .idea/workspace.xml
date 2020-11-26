@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8f853a7e-12fc-4807-a5b5-3f2026f96e44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ID3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ID3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+            <state relative-caret-position="1751">
+              <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ID3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="208" column="35" selection-start-line="208" selection-start-column="35" selection-end-line="208" selection-end-column="35" />
+            <state relative-caret-position="292">
+              <caret line="443" column="79" selection-start-line="443" selection-start-column="79" selection-end-line="443" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#GraphW#0;class#ID3#0" />
@@ -54,6 +56,8 @@
                 <element signature="method#ID3#0;class#ID3#0" />
                 <element signature="method#testTree#0;class#ID3#0" />
                 <element signature="method#getBestDel#0;class#ID3#0" />
+                <element signature="method#generateTree#0;class#ID3#0" />
+                <element signature="method#getEntropy#0;class#ID3#0" />
               </folding>
             </state>
           </provider>
@@ -118,7 +122,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="293" />
     <option name="y" value="23" />
     <option name="width" value="1627" />
@@ -132,7 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,10 +166,11 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606152819485" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606380126072" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -222,9 +226,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1311" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1311" height="784" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.22941646" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.23741007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -233,15 +238,15 @@
       <window_info id="Favorites" order="6" sideWeight="0.501006" side_tool="true" weight="0.22621903" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960032" visible="true" weight="0.45007682" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49880096" visible="true" weight="0.32258064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2826421" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872504" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.23655914" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003997" side_tool="true" weight="0.39631337" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50119907" side_tool="true" weight="0.2841782" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32872504" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.2826421" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49960032" weight="0.2826421" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24940048" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -343,8 +348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+        <state relative-caret-position="1751">
+          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -353,8 +358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ID3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="208" column="35" selection-start-line="208" selection-start-column="35" selection-end-line="208" selection-end-column="35" />
+        <state relative-caret-position="292">
+          <caret line="443" column="79" selection-start-line="443" selection-start-column="79" selection-end-line="443" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#GraphW#0;class#ID3#0" />
@@ -363,6 +368,8 @@
             <element signature="method#ID3#0;class#ID3#0" />
             <element signature="method#testTree#0;class#ID3#0" />
             <element signature="method#getBestDel#0;class#ID3#0" />
+            <element signature="method#generateTree#0;class#ID3#0" />
+            <element signature="method#getEntropy#0;class#ID3#0" />
           </folding>
         </state>
       </provider>
