@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f853a7e-12fc-4807-a5b5-3f2026f96e44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogRegression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogRegression.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,10 +29,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="666">
               <caret line="122" column="42" selection-start-line="122" selection-start-column="42" selection-end-line="122" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -45,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ID3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
+            <state relative-caret-position="-2830">
               <caret line="266" column="65" selection-start-line="266" selection-start-column="32" selection-end-line="266" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -55,21 +54,16 @@
                 <element signature="method#ID3#0;class#ID3#0" />
                 <element signature="method#testTree#0;class#ID3#0" />
                 <element signature="method#getBestDel#0;class#ID3#0" />
-                <element signature="method#getEntropy#0;class#ID3#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/LogRegression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-193">
-              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#showCoef#0;class#LogRegression#0" />
-              </folding>
+            <state relative-caret-position="101">
+              <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -88,11 +82,12 @@
       <find>12</find>
       <find>11</find>
       <find>time</find>
-      <find>double</find>
       <find>go to</find>
       <find>creatinine_p</find>
       <find>creatinine_ph</find>
       <find>out</find>
+      <find>float</find>
+      <find>double</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,8 +101,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/Tree.java" />
         <option value="$PROJECT_DIR$/src/main/java/ID3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LogRegression.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LogRegression.java" />
       </list>
     </option>
   </component>
@@ -182,7 +177,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607458280069" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607462095825" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -239,6 +234,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1311" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.3061551" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -249,7 +245,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.501006" side_tool="true" weight="0.22621903" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49880096" visible="true" weight="0.51459295" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49880096" weight="0.42396313" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2826421" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -257,7 +253,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.23655914" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50119907" side_tool="true" weight="0.2841782" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32872504" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49960032" weight="0.41321045" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49960032" visible="true" weight="0.41321045" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24940048" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -357,9 +353,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="122" column="42" selection-start-line="122" selection-start-column="42" selection-end-line="122" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ID3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
+        <state relative-caret-position="-2830">
           <caret line="266" column="65" selection-start-line="266" selection-start-column="32" selection-end-line="266" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -369,29 +375,14 @@
             <element signature="method#ID3#0;class#ID3#0" />
             <element signature="method#testTree#0;class#ID3#0" />
             <element signature="method#getBestDel#0;class#ID3#0" />
-            <element signature="method#getEntropy#0;class#ID3#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/LogRegression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#showCoef#0;class#LogRegression#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="122" column="42" selection-start-line="122" selection-start-column="42" selection-end-line="122" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="101">
+          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
         </state>
       </provider>
     </entry>
