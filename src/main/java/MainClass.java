@@ -110,6 +110,18 @@ public class MainClass {
             System.out.println();
             id3.printTree();
         }
+        System.out.println("////////////////////////////////////////////");
+        System.out.println();
+        System.out.println("Log regression: ");
+        LogRegression l = new LogRegression(learningArray);
+        System.out.println("Learning array: ");
+        l.testModel(learningArray);
+        System.out.println();
+        System.out.println("Test array: ");
+        l.testModel(testArray);
+        System.out.println();
+        System.out.println("Coefficients: ");
+        l.showCoef();
     }
 
 }
