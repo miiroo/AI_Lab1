@@ -29,7 +29,7 @@ public class LogRegression {
         float sum_error;
         float error;
         //epoch
-        for (int k=0;k<100000;k++) {
+        for (int k=0;k<10000;k++) {
             sum_error = 0;
             for (int j = 0; j < trData.size(); j++) {
                 z = 0;
@@ -46,7 +46,8 @@ public class LogRegression {
                // System.out.println("exp="+Math.exp(-1*z));
                 p = (float)(1.0 / (1.0 + Math.exp(-1*z)));
              //  System.out.println("p="+p);
-                error = Integer.parseInt(trData.get(j)[12])-p;
+                error = (float)(Integer.parseInt(trData.get(j)[12]))-p;
+                System.out.println("Error square: "+(error*error));
                 sum_error += error*error;
                 for (int i = 0; i < 12; i++) {
                     if (i == 2 || i == 8 || i==0 || i==4 ||  i == 11)
@@ -61,7 +62,7 @@ public class LogRegression {
                 }
                 w[12] = w[12] + alpha * ((float) Integer.parseInt(trData.get(j)[12]) - p) * p * ((float)1.0 - p) * (float)1.0;
             }
-          //  System.out.println("Epoch: "+k+" error = "+sum_error);
+         //   System.out.println("Epoch: "+k+" error = "+sum_error);
         }
         System.out.println();
     }
