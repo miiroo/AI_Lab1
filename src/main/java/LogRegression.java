@@ -47,7 +47,7 @@ public class LogRegression {
                 p = (float)(1.0 / (1.0 + Math.exp(-1*z)));
              //  System.out.println("p="+p);
                 error = (float)(Integer.parseInt(trData.get(j)[12]))-p;
-                System.out.println("Error square: "+(error*error));
+            //   System.out.println("Error square: "+(error*error));
                 sum_error += error*error;
                 for (int i = 0; i < 12; i++) {
                     if (i == 2 || i == 8 || i==0 || i==4 ||  i == 11)
