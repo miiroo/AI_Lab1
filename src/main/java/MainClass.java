@@ -128,7 +128,9 @@ public class MainClass {
         System.out.println("///////////////////////////////////////////////");
         System.out.println("One layer perceptron");
         System.out.println();
-        OneLayerPerceptron olp = new OneLayerPerceptron(learningArray, 100000, false);
+        int epoch = 50000;
+        System.out.println("Epoch amount: "+epoch);
+        OneLayerPerceptron olp = new OneLayerPerceptron(learningArray, epoch, false);
         System.out.println("Learning array: ");
         olp.testModel(learningArray);
         System.out.println();
