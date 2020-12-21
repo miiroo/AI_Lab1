@@ -4,8 +4,8 @@ import java.util.List;
 public class NeuralNetwork {
     //        //12 attributes + 1 free
     //        //free W at 12 place
-    private float alpha = (float)0.05;
-    private float epsilon = (float)0.02;
+    private float alpha = (float)0.5;
+    private float epsilon = (float)0.2;
 
 
     private class Neuron {
@@ -14,7 +14,7 @@ public class NeuralNetwork {
         public float[] w;
         public  float[] grad;
         public float lastOut;
-
+        public  float[] deltaW;
 
         public float getLast() {return  lastOut;}
 
@@ -23,9 +23,11 @@ public class NeuralNetwork {
         Neuron(int inputsC) {
             w = new float[inputsC];
             grad = new float[inputsC];
-            for (int i=0;i<inputsC;i++)
-                w[i] =(float)(1.0+Math.random()*(-1.0 - 1.0));
-
+            deltaW = new float[inputsC];
+            for (int i=0;i<inputsC;i++) {
+                w[i] = (float) (1.0 + Math.random() * (-1.0 - 1.0));
+                deltaW[i] = 0;
+            }
         }
 
 
@@ -94,9 +96,10 @@ public class NeuralNetwork {
                         for (int neurons = 0; neurons < network.get(layers).length; neurons++) {
                             z = 0;
                             for (int i = 0; i < network.get(layers)[neurons].w.length-1; i++) {
-                                z += network.get(layers - 1)[i].getLast() * network.get(layers)[neurons].w[i];
+                                z += network.get(layers - 1)[i].lastOut * network.get(layers)[neurons].w[i];
                             }
                             z += network.get(layers)[neurons].w[network.get(layers)[neurons].w.length-1];
+                            network.get(layers)[neurons].countOuter(z);
                         }
                     }
                 }
@@ -154,7 +157,9 @@ public class NeuralNetwork {
                 for (int layers = 0; layers < network.size(); layers++) {
                     for (int neurons = 0; neurons < network.get(layers).length; neurons++) {
                         for (int weight = 0; weight < network.get(layers)[neurons].w.length; weight++) {
-                            network.get(layers)[neurons].w[weight] -= epsilon * network.get(layers)[neurons].grad[weight];
+                            float deltaww =epsilon * network.get(layers)[neurons].grad[weight] +alpha * network.get(layers)[neurons].deltaW[weight];
+                            network.get(layers)[neurons].deltaW[weight] = deltaww;
+                            network.get(layers)[neurons].w[weight] += deltaww;
                         }
                     }
                 }
@@ -192,6 +197,7 @@ public class NeuralNetwork {
                             z += network.get(layers - 1)[i].getLast() * network.get(layers)[neurons].w[i];
                         }
                         z+= network.get(layers)[neurons].w[network.get(layers)[neurons].w.length-1];
+                        network.get(layers)[neurons].countOuter(z);
                     }
                 }
             }
