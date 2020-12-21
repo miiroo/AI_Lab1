@@ -128,7 +128,7 @@ public class MainClass {
         System.out.println("///////////////////////////////////////////////");
         System.out.println("One layer perceptron");
         System.out.println();
-        int epoch = 50000;
+        int epoch = 10;
         System.out.println("Epoch amount: "+epoch);
         OneLayerPerceptron olp = new OneLayerPerceptron(learningArray, epoch, false);
         System.out.println("Learning array: ");
@@ -139,6 +139,27 @@ public class MainClass {
         System.out.println();
         System.out.println("W matrix: ");
         olp.showW();
+
+
+        //Neuraal Network
+        System.out.println();
+        System.out.println("////////////////////////////////////////");
+        System.out.println("Neural network");
+        System.out.println();
+        int epoch2 = 1;
+        System.out.println("Epoch amount = " + epoch2);
+        NeuralNetwork nn = new NeuralNetwork(epoch2);
+        nn.addLayer(12);
+        nn.addLayer(6);
+        nn.addLayer(2);
+        nn.trainModel(learningArray);
+        System.out.println("Learning array test:");
+        nn.testModel(learningArray);
+        System.out.println();
+        System.out.println("Test array test:");
+        nn.testModel(testArray);
+        System.out.println();
+        nn.printWeights();
     }
 
 }
