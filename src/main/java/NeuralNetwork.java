@@ -4,9 +4,9 @@ import java.util.List;
 public class NeuralNetwork {
     //        //12 attributes + 1 free
     //        //free W at 12 place
-    private float alpha = (float)0.5;
-    private float epsilon = (float)0.2;
-
+    private float alpha = (float)0.3;
+    private float epsilon = (float)0.3;
+    private int sdvig = 0;
 
     private class Neuron {
 
@@ -40,8 +40,9 @@ public class NeuralNetwork {
     private int epoch;
     private List<Neuron[]> network = new ArrayList<Neuron[]>();
 
-    NeuralNetwork(int epoch) {
+    NeuralNetwork(int epoch, int sdvig) {
         this.epoch = epoch;
+        this.sdvig = sdvig;
     }
 
     public void addLayer(int neuronCount) {
@@ -52,7 +53,7 @@ public class NeuralNetwork {
             //if neurons locates one first layer they got (current layer-1 neuron count) inputs
             //if it's first layer they got 13 (for me) inputs
             if (network.size()-2 >= 0)
-                network.get(network.size()-1)[i] = new Neuron(network.get(network.size()-2).length+1);
+                network.get(network.size()-1)[i] = new Neuron(network.get(network.size()-2).length+sdvig);
             else network.get(network.size()-1)[i] = new Neuron(13);
         }
     }
@@ -60,15 +61,9 @@ public class NeuralNetwork {
     public void trainModel(List<String[]> datas) {
         //output
         float z;
-        float p;
-        //MSE
-        float sum_error;
-        //error on learning step
-        float error;
-
         //add activation layer
         network.add(new Neuron[1]);
-        network.get(network.size() - 1)[0] = new Neuron(network.get(network.size()-2).length+1);
+        network.get(network.size() - 1)[0] = new Neuron(network.get(network.size()-2).length+sdvig);
 
 
         //train for current amount of epoch
@@ -95,10 +90,11 @@ public class NeuralNetwork {
                     } else {
                         for (int neurons = 0; neurons < network.get(layers).length; neurons++) {
                             z = 0;
-                            for (int i = 0; i < network.get(layers)[neurons].w.length-1; i++) {
+                            for (int i = 0; i < network.get(layers)[neurons].w.length-sdvig; i++) {
                                 z += network.get(layers - 1)[i].lastOut * network.get(layers)[neurons].w[i];
                             }
-                            z += network.get(layers)[neurons].w[network.get(layers)[neurons].w.length-1];
+                            if (sdvig == 1)
+                               z += network.get(layers)[neurons].w[network.get(layers)[neurons].w.length-1];
                             network.get(layers)[neurons].countOuter(z);
                         }
                     }
@@ -129,10 +125,15 @@ public class NeuralNetwork {
                 for (int layers = network.size()-1; layers >=0; layers--) {
                     for (int neurons = 0; neurons < network.get(layers).length; neurons++) {
                         if (layers != 0) {
-                            for (int weight = 0; weight < network.get(layers)[neurons].w.length-1; weight++) {
+                            for (int weight = 0; weight < network.get(layers)[neurons].w.length-sdvig; weight++) {
                                    float output = network.get(layers - 1)[weight].lastOut;
                                    float delta = network.get(layers)[neurons].delta;
                                    network.get(layers)[neurons].grad[weight] = output*delta;
+                            }
+                            if (sdvig == 1 ) {
+                                float output = network.get(layers)[neurons].w[network.get(layers)[neurons].w.length-sdvig];
+                                float delta = network.get(layers)[neurons].delta;
+                                network.get(layers)[neurons].grad[network.get(layers)[neurons].w.length-sdvig] = output*delta;
                             }
                         }
                         else {
@@ -147,8 +148,12 @@ public class NeuralNetwork {
 
                                 float delta = network.get(layers)[neurons].delta;
                                 network.get(layers)[neurons].grad[i] = output*delta;
-
                             }
+
+                            float output = network.get(layers)[neurons].w[12];
+                            float delta = network.get(layers)[neurons].delta;
+                            network.get(layers)[neurons].grad[12] = output*delta;
+
                         }
                     }
                 }
@@ -193,10 +198,11 @@ public class NeuralNetwork {
                 } else {
                     for (int neurons = 0; neurons < network.get(layers).length; neurons++) {
                         z = 0;
-                        for (int i = 0; i < network.get(layers)[neurons].w.length-1; i++) {
+                        for (int i = 0; i < network.get(layers)[neurons].w.length-sdvig; i++) {
                             z += network.get(layers - 1)[i].getLast() * network.get(layers)[neurons].w[i];
                         }
-                        z+= network.get(layers)[neurons].w[network.get(layers)[neurons].w.length-1];
+                        if (sdvig == 1)
+                            z+= network.get(layers)[neurons].w[network.get(layers)[neurons].w.length-1];
                         network.get(layers)[neurons].countOuter(z);
                     }
                 }

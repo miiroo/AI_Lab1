@@ -148,10 +148,10 @@ public class MainClass {
         System.out.println();
         int epoch2 = 100;
         System.out.println("Epoch amount = " + epoch2);
-        NeuralNetwork nn = new NeuralNetwork(epoch2);
-        nn.addLayer(4);
-        nn.addLayer(2);
-   //     nn.addLayer(2);
+        NeuralNetwork nn = new NeuralNetwork(epoch2, 0);
+        nn.addLayer(6);
+        nn.addLayer(3);
+      //  nn.addLayer(2);
         nn.trainModel(learningArray);
         System.out.println("Learning array test:");
         nn.testModel(learningArray);
