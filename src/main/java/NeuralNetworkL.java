@@ -173,6 +173,7 @@ public class NeuralNetworkL {
         public  void testModel(List<String[]> datas) {
             float z;
             float accuracy=0;
+            float d = countD(datas, countMean(datas));
             for (int j = 0; j<datas.size(); j++) {
                 //get results of each layer//////////////////////
                 for (int layers = 0; layers < network.size(); layers++) {
@@ -202,12 +203,28 @@ public class NeuralNetworkL {
                 //if (result < 0.5) result = 0;
                 //else result = 1;
                 //System.out.println("Result:" +result +" Actual:"+(Float.parseFloat(datas.get(j)[8]))*10);
-                if (Math.abs(result - Float.parseFloat(datas.get(j)[8])*10) < 0.1 ) accuracy++;
+                if (Math.pow(result - Float.parseFloat(datas.get(j)[8])*10,2) <= d) accuracy++;
             }
             accuracy = accuracy/datas.size();
             System.out.println("Accuracy = " + accuracy);
         }
 
+        private float countMean(List<String[]> dt) {
+            float mean=0;
+            for (int i=0; i< dt.size(); i++) {
+                mean += Float.parseFloat(dt.get(i)[8]);
+            }
+            return  mean/dt.size();
+        }
+        private float countD(List<String[]> dt, float mean) {
+            float result=0;
+            for (int i = 0; i < dt.size(); i++) {
+                result += (float)Math.pow(Float.parseFloat(dt.get(i)[8]) - mean, 2);
+            }
+            result = result / dt.size();
+            result = (float)Math.sqrt(result);
+            return  result;
+        }
 
         public void printWeights() {
             System.out.println("Pattern: W[layer][neuron][weight]");
