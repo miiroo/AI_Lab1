@@ -8,7 +8,7 @@ public class Node {
     public  Node rightChild = null;
     public String attrOrClass;
     public  int attrIndex;
-
+    public float d;
 
     public void printTree() throws IOException {
         if (rightChild != null) {
