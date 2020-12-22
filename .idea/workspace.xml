@@ -42,70 +42,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/NeuralNetworkL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="175" column="54" selection-start-line="175" selection-start-column="54" selection-end-line="175" selection-end-column="54" />
+            <state relative-caret-position="310">
+              <caret line="226" column="9" lean-forward="true" selection-start-line="211" selection-start-column="8" selection-end-line="226" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#countMean#0;class#NeuralNetworkL#0" />
-                <element signature="method#coundD#0;class#NeuralNetworkL#0" />
+                <element signature="method#printWeights#0;class#NeuralNetwork#0;class#NeuralNetworkL#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RegressionTree.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/KPirson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="394" selection-start-line="394" selection-end-line="400" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#RegressionTree#0;class#RegressionTree#0" />
-                <element signature="method#testTree#0;class#ID3#0;class#RegressionTree#0" />
-                <element signature="method#getBestDel#0;class#RegressionTree#0" />
-                <element signature="e#4198#4208#0" expanded="true" />
-                <element signature="e#4260#4270#0" expanded="true" />
-                <element signature="e#9250#9260#0" expanded="true" />
-                <element signature="e#9320#9330#0" expanded="true" />
-                <element signature="method#countMean#0;class#RegressionTree#0" />
-                <element signature="method#getEntropy#0;class#ID3#0;class#RegressionTree#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-433">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Tree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NeuralNetwork.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="204" column="28" selection-end-line="235" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="class#Neuron#0;class#NeuralNetwork#0" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -151,6 +105,7 @@
         <option value="$PROJECT_DIR$/src/main/java/RegressionTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/NeuralNetworkL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/KPirson.java" />
       </list>
     </option>
   </component>
@@ -177,7 +132,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="293" />
     <option name="y" value="23" />
     <option name="width" value="1627" />
@@ -232,7 +187,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608612547999" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608632615049" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -289,10 +244,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1311" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1311" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.3277378" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49899396" visible="true" weight="0.3277378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -301,7 +256,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.501006" side_tool="true" weight="0.22621903" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49880096" visible="true" weight="0.41321045" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49880096" visible="true" weight="0.32872504" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5652842" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -418,19 +373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NeuralNetwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="204" column="28" selection-end-line="235" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#Neuron#0;class#NeuralNetwork#0" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -488,10 +430,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NeuralNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-296">
+          <caret line="196" column="21" lean-forward="true" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Neuron#0;class#NeuralNetwork#0" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RegressionTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="394" selection-start-line="394" selection-end-line="400" selection-end-column="27" />
+        <state relative-caret-position="62">
+          <caret line="403" column="13" selection-start-line="403" selection-start-column="13" selection-end-line="403" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#RegressionTree#0;class#RegressionTree#0" />
@@ -502,20 +457,26 @@
             <element signature="e#9250#9260#0" expanded="true" />
             <element signature="e#9320#9330#0" expanded="true" />
             <element signature="method#countMean#0;class#RegressionTree#0" />
-            <element signature="method#getEntropy#0;class#ID3#0;class#RegressionTree#0" />
+            <element signature="method#countD#0;class#RegressionTree#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NeuralNetworkL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="175" column="54" selection-start-line="175" selection-start-column="54" selection-end-line="175" selection-end-column="54" />
+        <state relative-caret-position="310">
+          <caret line="226" column="9" lean-forward="true" selection-start-line="211" selection-start-column="8" selection-end-line="226" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#countMean#0;class#NeuralNetworkL#0" />
-            <element signature="method#coundD#0;class#NeuralNetworkL#0" />
+            <element signature="method#printWeights#0;class#NeuralNetwork#0;class#NeuralNetworkL#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KPirson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>

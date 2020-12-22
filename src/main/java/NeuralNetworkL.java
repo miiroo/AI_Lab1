@@ -203,7 +203,7 @@ public class NeuralNetworkL {
                 //if (result < 0.5) result = 0;
                 //else result = 1;
                 //System.out.println("Result:" +result +" Actual:"+(Float.parseFloat(datas.get(j)[8]))*10);
-                if (Math.pow(result - Float.parseFloat(datas.get(j)[8])*10,2) <= d) accuracy++;
+                if (Math.pow((result - Float.parseFloat(datas.get(j)[8])*10),2) <= d) accuracy++;
             }
             accuracy = accuracy/datas.size();
             System.out.println("Accuracy = " + accuracy);
