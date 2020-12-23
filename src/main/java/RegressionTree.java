@@ -339,7 +339,7 @@ public class RegressionTree {
                                         currNode.rightChild.isLeaf = true;
                                         currNode.rightChild.isNode = false;
                                         currNode.rightChild.d = countD(leftSide, countMean(leftSide));
-                                        currNode.rightChild.attrOrClass = countMean(leftSide)+"+-"+currNode.rightChild.d;;
+                                        currNode.rightChild.attrOrClass = countMean(leftSide)+"+-"+currNode.rightChild.d;
                                         currNode.rightChild.key =countMean(leftSide);
                                     }
                                     if ((counter == 0) || (counter < (0.5 * leftSide.size()))) {
